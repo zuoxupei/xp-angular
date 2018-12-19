@@ -1,0 +1,13 @@
+$ifw-toast-shadow:1px 1px 5px #7eb9f0;
+.toast-wapper {
+    width: 400px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: $ifw-toast-shadow;
+    -webkit-box-shadow: $ifw-toast-shadow;
+    -moz-box-shadow: $ifw-toast-shadow;
+    border: none;
+    text-align: center;
+}

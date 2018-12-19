@@ -1,0 +1,18 @@
+.ifw-toast-box {
+    position: absolute;
+    z-index: 1024;
+    margin-top: 60px;
+    max-width: 500px;
+}
+
+.ifw-top-center {
+    top: 0;
+    left: -moz-calc( 50% - 225px);
+    left: -webkit-calc( 50% - 225px);
+    left: calc( 50% - 225px);
+}
+
+.ifw-toast-content {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}

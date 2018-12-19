@@ -1,0 +1,5 @@
+<div class="ifw-toast-box" [ngClass]="boxPosition">
+    <div *ngFor="let tconfig of toastConfigs()" class="ifw-toast-content" [@animation]="toastAnimation">
+        <ifw-toast [config]="tconfig" (dismissed)="remove(tconfig)"></ifw-toast>
+    </div>
+</div>

@@ -1,3 +1,14 @@
 <div class="toast-wapper">
-    <span>{{config.notice}}</span>
+    <div class="toast-type" [class.toast-type-success]="isSuccess()" [class.toast-type-warning]="isWarning()" [class.toast-type-info]="isInfo()" [class.toast-type-no-repeat]="isNoRepeat()" [class.toast-type-error]="isError()" [class.toast-type-loading]="isloading()">
+        <div></div>
+    </div>
+    <div class="toast-notice">
+        <div>
+            {{config.notice}}
+        </div>
+    </div>
+    <div class="toast-close">
+        <div (click)="dismiss()" *ngIf="isNoRepeat()? false : true "></div>
+        <span *ngIf="isNoRepeat()" (click)="noRepeat()">不在提示</span>
+    </div>
 </div>

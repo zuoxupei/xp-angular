@@ -34,11 +34,17 @@ export class AppComponent implements OnInit{
   }
 
   onClick(){
-    this.ifwToast.toast(new ToastConfig(ToastType.SUCCESS,new Date().getSeconds()+"zxp",3000,false))
+    this.ifwToast.toast(new ToastConfig(ToastType.SUCCESS,"方案保存成功",3000,false))
+    this.ifwToast.toast(new ToastConfig(ToastType.INFO,"方案保存成功",3000,false))
+    this.ifwToast.toast(new ToastConfig(ToastType.WARNING,"方案保存成功",3000,false))
+    this.ifwToast.toast(new ToastConfig(ToastType.ERROR,"方案保存成功",3000,false))
+    this.ifwToast.toast(new ToastConfig(ToastType.NO_REPEAT,"方案保存成功不再提示",3000,false))
+    this.ifwToast.toast(new ToastConfig(ToastType.LOADING,"方案加载中",3000,false))
   }
 
   onClick1(){
-    this.title = "测试";
+    console.log('111111111111')
+    this.title = "测试"+new Date().getSeconds()+"zxp";
   }
 
   ngOnChanges(){
@@ -46,3 +52,4 @@ export class AppComponent implements OnInit{
   }
 
 }
+

@@ -33,6 +33,13 @@ export class IfwToastBoxComponent implements OnInit {
 
   constructor(private ifwToast: IfwToastService) {
     this.ifwToast.$toastSubject.subscribe((config: ToastConfig) => {
+      if(config.toastType === ToastType.LOADING_OVER){
+        let i = this._toastConfigs.findIndex(x=>{
+          return x.toastType === ToastType.LOADING;
+        })
+        this._toastConfigs.splice(i, 1);
+        return;
+      }
       if(!this._distin(config)){
         if(config.toastType === ToastType.NO_REPEAT){
           if(!this._checkRepeat(config)){
@@ -56,7 +63,9 @@ export class IfwToastBoxComponent implements OnInit {
    * 去重 或者不再提示
    */
   private _distin(config: ToastConfig): boolean {
-    return this._toastConfigs.indexOf(config) > 0;
+    return this._toastConfigs.some((tc:ToastConfig)=>{
+      return tc.notice === config.notice && tc.toastType === config.toastType;
+    });
   }
 
   private _checkRepeat(config: ToastConfig):boolean {

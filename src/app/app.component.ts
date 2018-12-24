@@ -38,13 +38,13 @@ export class AppComponent implements OnInit{
     this.ifwToast.toast(new ToastConfig(ToastType.INFO,"方案保存成功",3000,false))
     this.ifwToast.toast(new ToastConfig(ToastType.WARNING,"方案保存成功",3000,false))
     this.ifwToast.toast(new ToastConfig(ToastType.ERROR,"方案保存成功",3000,false))
-    this.ifwToast.toast(new ToastConfig(ToastType.NO_REPEAT,"方案保存成功不再提示",3000,false))
-    this.ifwToast.toast(new ToastConfig(ToastType.LOADING,"方案加载中",3000,false))
+    this.ifwToast.toast(new ToastConfig(ToastType.NO_REPEAT,"方案保存成功不再提示方案保存成功",3000,false))
+    this.ifwToast.toast(new ToastConfig(ToastType.LOADING,"方案加载中方案保存",0,true))
   }
 
   onClick1(){
     console.log('111111111111')
-    this.title = "测试"+new Date().getSeconds()+"zxp";
+    this.ifwToast.toast(new ToastConfig(ToastType.LOADING_OVER,""))
   }
 
   ngOnChanges(){

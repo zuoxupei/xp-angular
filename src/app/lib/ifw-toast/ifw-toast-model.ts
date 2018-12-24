@@ -5,7 +5,7 @@
  * @enum {number}
  */
 export enum ToastType {
-    SUCCESS, INFO, WARNING, ERROR, NO_REPEAT, LOADING
+    SUCCESS, INFO, WARNING, ERROR, NO_REPEAT, LOADING,LOADING_OVER
 }
 
 export class ToastConfig {
@@ -47,11 +47,11 @@ export class ToastConfig {
     }
 
     isDismissable() {
-        return this._autoDismissTime === 0 || this.dismissable;
+        return this._autoDismissTime <= 0 || this.dismissable;
     }
 
     isAutoDismissing() {
-        return this._autoDismissTime > 0;
+        return this._autoDismissTime > 0 || !this.dismissable;
     }
 }
 

@@ -15,7 +15,7 @@ export class IfwToastComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    // if(this.config.isAutoDismissing){
+    // if(this.config.isAutoDismissing()){
     //   setTimeout(()=>{
     //     this.dismiss();
     //   },this.config.autoDismissTime);

@@ -1,6 +1,6 @@
 $ifw-toast-shadow:1px 1px 5px #7eb9f0;
 .toast-wapper {
-    width: 360px;
+    min-width: 360px;
     height: 40px;
     border-radius: 3px;
     background-color: white;
@@ -10,11 +10,12 @@ $ifw-toast-shadow:1px 1px 5px #7eb9f0;
     border: none;
     display: flex;
     display: -webkit-flex;
+    justify-content: space-between;
     >div {
         height: 100%;
     }
     .toast-type {
-        width: 13%;
+        width: 50px;
         border-radius: 3px 0px 0px 3px;
         text-align: center;
         position: relative;
@@ -72,25 +73,19 @@ $ifw-toast-shadow:1px 1px 5px #7eb9f0;
         }
     }
     .toast-notice {
-        margin-left: 4%;
-        width: 61%;
-        font-size: 18px;
-        position: relative;
-        padding-left: 10px;
+        font-size: 17px;
         color: gray;
         user-select: none;
+        width: calc(100% - 130px);
         div {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            margin: auto;
+            padding-left: 16px;
             line-height: 40px;
         }
     }
     .toast-close {
-        width: 22%;
+        width: 80px;
         position: relative;
-        padding-left: 10px;
+        padding-left: 8px;
         div {
             cursor: pointer;
             background-repeat: no-repeat;
@@ -100,7 +95,7 @@ $ifw-toast-shadow:1px 1px 5px #7eb9f0;
             position: absolute;
             top: 0;
             bottom: 0;
-            left: 30px;
+            right: 20px;
             margin: auto;
         }
         span {

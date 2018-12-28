@@ -36,7 +36,7 @@ export class MultiEventPlugin extends EventManagerPlugin {
     }
 
     private _forkHandler(fn:Function):Function{
-        console.log("埋点策略");
+        console.log("埋点策略",fn);
         return fn;
     }
 }

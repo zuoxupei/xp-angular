@@ -42,6 +42,7 @@ export class AppComponent implements OnInit{
     // this.ifwToast.toast(new ToastConfig(ToastType.NO_REPEAT,"方案保存成功不再提示方案保存成功",3000,false))
     // this.ifwToast.toast(new ToastConfig(ToastType.LOADING,"方案加载中方案保存",0,true))
     console.log(Reflect.get(this,"onClick1"));
+    throw new Error("错误测试")
   }
 
   @Aop()
@@ -52,6 +53,7 @@ export class AppComponent implements OnInit{
 
   ngOnChanges(){
     console.log('111111111111')
+
   }
 
 }

@@ -1,10 +1,9 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy, Output } from '@angular/core';
 import Xp from 'tsxp/dist/indexX';
 import XpTest from 'tsxp/dist/indexP';
 import Vector3D from 'tsxp/dist/xpT';
 import Kmp from 'ty-algorithm/dist/ty_kmp';
 import { IfwToastService } from './lib/ifw-toast/ifw-toast.service';
-import { ToastConfig, ToastType } from './lib/ifw-toast/ifw-toast-model';
 import { Aop } from './decorator/Decorator.config';
 
 @Component({
@@ -20,7 +19,7 @@ export class AppComponent implements OnInit{
   public c:number =1;
 
   constructor(private ifwToast:IfwToastService){
-
+    console.log("22222222222")
   }
 
   ngOnInit(): void {
@@ -48,7 +47,8 @@ export class AppComponent implements OnInit{
   @Aop()
   onClick1(){
     console.log('111111111111')
-    this.ifwToast.toast(new ToastConfig(ToastType.LOADING_OVER,""));
+    // this.ifwToast.toast(new ToastConfig(ToastType.LOADING_OVER,""));
+    let arr = [1,2,[3,4],5];
   }
 
   ngOnChanges(){

@@ -22,6 +22,8 @@
         "@angular/router": "^6.0.3",
         "@types/three": "^0.84.28",
         "core-js": "^2.5.4",
+        "inversify": "^5.0.1",
+        "reflect-metadata": "^0.1.12",
         "rxjs": "^6.0.0",
         "ty-algorithm": "^1.0.4",
         "zone.js": "^0.8.26"

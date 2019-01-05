@@ -6,7 +6,7 @@ import Vector3D from 'tsxp/dist/xpT';
 import Kmp from 'ty-algorithm/dist/ty_kmp';
 import { IfwToastService } from './lib/ifw-toast/ifw-toast.service';
 import { Aop } from './decorator/AOP.decorator';
-import {resourceIns, Autowired } from './decorator/DI.decorator';
+import {Autowired } from './decorator/DI.decorator';
 import { Company } from './entity/Person/company';
 
 @Component({
@@ -19,8 +19,6 @@ import { Company } from './entity/Person/company';
 export class AppComponent implements OnInit{
   
   title = 'app';
-
-  @Output()
   public t :number =2;
   public c:number =1;
 
@@ -47,7 +45,6 @@ export class AppComponent implements OnInit{
   onClick(){
     this.person.openTheDoor();
     this.com.findJob();
-    console.log(Object.getOwnPropertyNames(this))
   }
 
 }

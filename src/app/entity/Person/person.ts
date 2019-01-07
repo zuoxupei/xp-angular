@@ -1,4 +1,5 @@
-import { InjectIns } from "src/app/decorator/DI.decorator";
+import { InjectIns } from "src/app/core/decorator/DI.decorator";
+
 
 @InjectIns
 export class Person{

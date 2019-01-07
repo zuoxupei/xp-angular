@@ -34,37 +34,37 @@ $ifw-toast-shadow:1px 1px 5px #7eb9f0;
     .toast-type-success {
         background: #00BB9B;
         div {
-            background-image: url('../../../../assets/img/toast/toast-right.png');
+            background-image: url('../../../../../assets/img/toast/toast-right.png');
         }
     }
     .toast-type-info {
         background: rgb(76, 167, 241);
         div {
-            background-image: url('../../../../assets/img/toast/toast-info.png');
+            background-image: url('../../../../../assets/img/toast/toast-info.png');
         }
     }
     .toast-type-error {
         background: #d42a39;
         div {
-            background-image: url('../../../../assets/img/toast/toast-error.png');
+            background-image: url('../../../../../assets/img/toast/toast-error.png');
         }
     }
     .toast-type-warning {
         background: #FFAC33;
         div {
-            background-image: url('../../../../assets/img/toast/toast-warning.png');
+            background-image: url('../../../../../assets/img/toast/toast-warning.png');
         }
     }
     .toast-type-no-repeat {
         background: rgb(76, 167, 241);
         div {
-            background-image: url('../../../../assets/img/toast/toast-no-repeat.png');
+            background-image: url('../../../../../assets/img/toast/toast-no-repeat.png');
         }
     }
     .toast-type-loading {
         background: #ffffff;
         div {
-            background-image: url('../../../../assets/img/toast/toast-loading.png');
+            background-image: url('../../../../../assets/img/toast/toast-loading.png');
             -webkit-transform: rotate(360deg);
             animation: rotation 2s linear infinite;
             -moz-animation: rotation 2s linear infinite;
@@ -89,7 +89,7 @@ $ifw-toast-shadow:1px 1px 5px #7eb9f0;
         div {
             cursor: pointer;
             background-repeat: no-repeat;
-            background-image: url('../../../../assets/img/toast/toast-close.png');
+            background-image: url('../../../../../assets/img/toast/toast-close.png');
             width: 32px;
             height: 32px;
             position: absolute;

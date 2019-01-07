@@ -4,10 +4,8 @@ import Xp from 'tsxp/dist/indexX';
 import XpTest from 'tsxp/dist/indexP';
 import Vector3D from 'tsxp/dist/xpT';
 import Kmp from 'ty-algorithm/dist/ty_kmp';
-import { IfwToastService } from './lib/ifw-toast/ifw-toast.service';
-import { Aop } from './decorator/AOP.decorator';
-import {Autowired } from './decorator/DI.decorator';
 import { Company } from './entity/Person/company';
+import { Autowired } from './core/decorator/DI.decorator';
 
 @Component({
   selector: 'app-root',

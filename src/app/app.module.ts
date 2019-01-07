@@ -2,9 +2,9 @@ import { BrowserModule, EVENT_MANAGER_PLUGINS } from '@angular/platform-browser'
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
-import { MultiEventPlugin } from './plugins/MultiEventPlugin';
-import { IfwToastModule } from './lib/ifw-toast/ifw-toast.module';
-import { IErrorHandler } from './monitor/IErrorHandler';
+import { IfwToastModule } from './core/lib/ifw-toast/ifw-toast.module';
+import { MultiEventPlugin } from './core/plugins/MultiEventPlugin';
+import { IErrorHandler } from './core/monitor/IErrorHandler';
 
 @NgModule({
   declarations: [

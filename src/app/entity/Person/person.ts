@@ -1,7 +1,7 @@
 import { InjectIns } from "src/app/core/decorator/DI.decorator";
 
 
-@InjectIns
+@InjectIns()
 export class Person{
     public name:string = "zxp";
     public age : number;

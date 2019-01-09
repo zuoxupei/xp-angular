@@ -1,7 +1,7 @@
 import { InjectIns } from "src/app/core/decorator/DI.decorator";
 
 
-@InjectIns
+@InjectIns()
 export class Company{
     public c_name = "ifw";
 

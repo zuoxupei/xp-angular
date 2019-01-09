@@ -1,7 +1,6 @@
 const InsFactory=[];
-export const InjectIns = convertInjectInsToFactory();
 
-export function convertInjectInsToFactory(){
+export function InjectIns(){
     return function(target:any){
         InsFactory.push(new target())
     };

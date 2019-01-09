@@ -5,13 +5,14 @@ import { AppComponent } from './app.component';
 import { IfwToastModule } from './core/lib/ifw-toast/ifw-toast.module';
 import { MultiEventPlugin } from './core/plugins/MultiEventPlugin';
 import { IErrorHandler } from './core/monitor/IErrorHandler';
+import { AppRouteModule } from './route/app-route.module';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule,IfwToastModule,BrowserAnimationsModule
+    BrowserModule,IfwToastModule,BrowserAnimationsModule,AppRouteModule
   ],
   providers: [{ provide: EVENT_MANAGER_PLUGINS, useClass: MultiEventPlugin, multi: true },
               { provide:ErrorHandler,useClass:IErrorHandler} ],

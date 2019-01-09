@@ -1,5 +1,5 @@
 import { Person } from './entity/Person/person';
-import { Component, OnInit, ChangeDetectionStrategy, Output } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy, Output, InjectionToken, ElementRef, ViewChild, Renderer, SimpleChanges, ChangeDetectorRef } from '@angular/core';
 import Xp from 'tsxp/dist/indexX';
 import XpTest from 'tsxp/dist/indexP';
 import Vector3D from 'tsxp/dist/xpT';
@@ -26,23 +26,13 @@ export class AppComponent implements OnInit{
   @Autowired(Company)
   public com:Company;
 
-  constructor(){
+  @ViewChild('vc')
+  vc:ElementRef;
+
+  constructor(private ele:ElementRef,private renderer: Renderer,private cd:ChangeDetectorRef){
   }
 
   ngOnInit(): void {
-    // let x= new Xp(1,23,3);
-    // this.c = x.reduceXP();
-    // let f = new XpTest(1,2);
-    // this.t = f.addXP();
-    // let v=new Vector3D(1,2,11111113);
-    // this.c= v.z;
-    let b = new Kmp(1,22);
-    this.t= b.kmpReduce();
-  }
-
-  onClick(){
-    this.person.openTheDoor();
-    this.com.findJob();
   }
 
 }
